@@ -9,12 +9,12 @@ public class ToggleReferenceSkybox : MonoBehaviour{
     public void DestroyGO(){
         Destroy(GameObject.Find("NewSkyboxCamera"));
     }
-    public void ToggleOnAndOffAndUnloadAssets(){
+    public void UnloadAssetsAndDestroy(){
         DestroyGO();
         Resources.UnloadUnusedAssets();
     }
-    public void ToggleOnAndOffAndUnloadAssetsAndGCCollect(){
-        ToggleOnAndOffAndUnloadAssets();
+    public void UnloadAssetsAndDestroyAndGCCollect(){
+        UnloadAssetsAndDestroy();
         GC.Collect();
     }
 }

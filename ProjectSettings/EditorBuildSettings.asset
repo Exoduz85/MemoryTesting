@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ToggleOnAndOff.unity
+    guid: 82cd88f55d0174cc6bbf291940db4cc7
+  - enabled: 1
+    path: Assets/Scenes/InstantiatePrefab.unity
+    guid: 324ab8426e1c74127a20f6c6d4630601
+  - enabled: 1
+    path: Assets/Scenes/LoadNewScene.unity
+    guid: 9830a9a218a6e46d8a81b8b6c93a9f1e
   m_configObjects: {}
