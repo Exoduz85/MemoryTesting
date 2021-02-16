@@ -1,5 +1,8 @@
 using System;
 using UnityEngine;
+using System.IO;
+using UnityEngine.Networking;
+
 public class LoadFromStreamingAsset : MonoBehaviour{
     private GameObject loadedResource;
     public bool resoursesUnload = false;
@@ -8,7 +11,11 @@ public class LoadFromStreamingAsset : MonoBehaviour{
     public void LoadResource(){
         if(loadedResource != null) Destroy(loadedResource);
         
-        loadedResource = Instantiate(Resources.Load<GameObject>("ResourceTest"));
+        /*
+        Material mat = new Material(Shader.Find("Skybox/Cubemap"));
+        var cubeTexture2D = DownloadHandlerTexture.GetContent(UnityWebRequestTexture.GetTexture(Application.persistentDataPath + "/StreamingAssets/AssetOnePNG.png"));
+        Cubemap cubemap = new Cubemap(128, TextureFormat.RGBA32, false);
+        */
         
         if(resoursesUnload) Resources.UnloadUnusedAssets();
         if(gcCollect) GC.Collect();
