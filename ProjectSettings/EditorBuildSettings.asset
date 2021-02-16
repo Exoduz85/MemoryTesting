@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/InstantiatePrefab.unity
     guid: 324ab8426e1c74127a20f6c6d4630601
   - enabled: 1
-    path: Assets/Scenes/NewSceneSkybox.unity
+    path: Assets/Scenes/LoadNextScenesTest.unity
+    guid: 7ac1301ab70c2499da11f70f6de9175a
+  - enabled: 1
+    path: Assets/Scenes/AdditiveScene.unity
     guid: 9830a9a218a6e46d8a81b8b6c93a9f1e
+  - enabled: 1
+    path: Assets/Scenes/SeparateScene.unity
+    guid: 74e0923bd882241bfab09a275842e421
   m_configObjects: {}

@@ -411,7 +411,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee04afee1872d4238bcc2ca95af454a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1592655648687465776, guid: 1ac11cc56b96b48c48b604d3bdd5666a, type: 3}
+  skyBoxCameras:
+  - {fileID: 8849284674982485243, guid: bd356fe9672134596b671f5145b7409d, type: 3}
+  - {fileID: 2048118883585820036, guid: b4942bfeb42594f9fa29523e710cb549, type: 3}
+  - {fileID: 5121617175680220339, guid: 772b914577fe04a6b9670d9ec7981f5c, type: 3}
+  - {fileID: 8381560016839566224, guid: 1ed0663c06e50480e8d30765ffab7a1b, type: 3}
+  - {fileID: 961853708756123312, guid: e13be0fb3dbee40998ce0d14dd491f86, type: 3}
+  - {fileID: 1789320437466745818, guid: 171c3345809ed4d3582aa3e9643f7aa9, type: 3}
+  currentSkybox: {fileID: 0}
+  currentIndex: 0
 --- !u!1 &342133430
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +901,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 211679860}
         m_TargetAssemblyTypeName: ToggleReferenceSkybox, Assembly-CSharp
-        m_MethodName: Instantiate
+        m_MethodName: InstantiateNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

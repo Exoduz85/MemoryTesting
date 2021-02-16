@@ -1,13 +1,34 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NewSceneSkybox : MonoBehaviour{
-    public Scene reloadSkyboxScene;
-    public Scene skyboxScene;
-    public void ReloadLoadSkyboxScene(){
-        SceneManager.LoadScene(reloadSkyboxScene.handle);
+    public void LoadSeparateScene(){
+        SceneManager.LoadScene("SeparateScene");
     }
-    public void LoadTheSkyboxScene(){
-        SceneManager.LoadScene(skyboxScene.handle);
+    public void LoadAdditiveScene(){
+        SceneManager.LoadScene("AdditiveScene", LoadSceneMode.Additive);
     }
-} // add a second scene to go bath and forth in, that with separate buttons that use gc and unload assets
+    public void UnLoadAdditiveScene(){
+        SceneManager.UnloadSceneAsync("AdditiveScene");
+    }
+    public void UnLoadAdditiveSceneAndUnusedAssets(){
+        Resources.UnloadUnusedAssets();
+        UnLoadAdditiveScene();
+    }
+    public void UnLoadAdditiveSceneAndUnusedAssetsAndGCCollect(){
+        GC.Collect();
+        UnLoadAdditiveSceneAndUnusedAssets();
+    }
+    public void ReloadTheSkyboxScene(){
+        SceneManager.LoadScene("NewSceneSkybox");
+    }
+    public void ReloadTheSkyboxSceneAndUnusedAssets(){
+        Resources.UnloadUnusedAssets();
+        ReloadTheSkyboxScene();
+    }
+    public void ReloadTheSkyboxSceneAndUnusedAssetsAndGCCollect(){
+        GC.Collect();
+        ReloadTheSkyboxSceneAndUnusedAssets();
+    }
+}

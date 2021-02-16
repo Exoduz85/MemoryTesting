@@ -1,12 +1,9 @@
 using System;
 using UnityEngine;
 public class ToggleSkybox : MonoBehaviour{
-    private Material skybox;
-    private void Start(){
-        this.skybox = RenderSettings.skybox;
-    }
+    public GameObject skybox;
     public void ToggleOnAndOff(){
-        RenderSettings.skybox = RenderSettings.skybox == null ? this.skybox : null;
+        skybox.SetActive(!skybox.activeSelf);
     }
     public void ToggleOnAndOffAndUnloadAssets(){
         ToggleOnAndOff();
