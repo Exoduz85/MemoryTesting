@@ -5,28 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/ToggleOnAndOff.unity
-    guid: 82cd88f55d0174cc6bbf291940db4cc7
   - enabled: 1
-    path: Assets/Scenes/Skybox1.unity
-    guid: 1275ed7104fbe4e989bd1a7ac476c22a
-  - enabled: 1
-    path: Assets/Scenes/Skybox2.unity
-    guid: 75b20c1b2e05642cebe1d4e07a7e114f
-  - enabled: 1
-    path: Assets/Scenes/Skybox3.unity
-    guid: 5a63399481f364be1a9c50f9a13f0b20
-  - enabled: 1
-    path: Assets/Scenes/Skybox4.unity
-    guid: e8e266ca3bd8e4f54a0dc88a91467dfe
-  - enabled: 1
-    path: Assets/Scenes/Skybox5.unity
-    guid: ebc18c66eba964853910e80f1dd3133d
-  - enabled: 1
-    path: Assets/Scenes/Skybox6.unity
-    guid: 27cbbbb3bebca49a99ef5e76adf78cf0
-  - enabled: 0
-    path: Assets/Scenes/InstantiatePrefabSkybox.unity
-    guid: 729be280792194db190c2641c1db6260
+    path: Assets/Scenes/LoadResource.unity
+    guid: d5c60e538473a4369b34c8f54918db28
   m_configObjects: {}
