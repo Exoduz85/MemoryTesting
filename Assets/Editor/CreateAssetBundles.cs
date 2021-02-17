@@ -11,6 +11,6 @@ public class CreateAssetBundles{
         if (!Directory.Exists(Application.streamingAssetsPath)){
             Directory.CreateDirectory(assetBundleDirectory);
         }
-        BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None, BuildTarget.iOS);
+        BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None , BuildTarget.iOS);
     }
 }
